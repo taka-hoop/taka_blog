@@ -48,7 +48,9 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
+
+
   <<: *default
-  database: taka_blog_production
-  username: taka_blog
-  password: <%= ENV['TAKA_BLOG_DATABASE_PASSWORD'] %>
+  dadapter: postgresql
+  encoding: unicode
+  pool: 5

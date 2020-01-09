@@ -61,3 +61,12 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
+gem 'pry-rails'
+
+group :development, :test do
+  gem 'sqlite3' #do ~ end内部に追加。他のgemは残してください。
+end
+
+group :production do
+  gem 'pg'
+end
