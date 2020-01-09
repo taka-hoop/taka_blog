@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Taka Blog</title>
+    <title>Taka blog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,10 +11,10 @@
   <body>
     <header class="header">
       <div class="header__title">
-        <%= link_to "Taka Blog", '#', class: "header__title--text" %>
+        <%= link_to "Taka Blog", root_path, class: "header__title--text" %>
       </div>
       <div class="header__right">
-        <%= link_to "新規投稿", '#', class: "header__right--btn" %>
+        <%= link_to "新規投稿", new_post_path, class: "header__right--btn" %>
       </div>
     </header>
     <div class="contents">
