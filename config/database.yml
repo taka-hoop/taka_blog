@@ -51,6 +51,6 @@ production:
 
 
   <<: *default
-  dadapter: postgresql
+  adapter: postgresql
   encoding: unicode
   pool: 5
